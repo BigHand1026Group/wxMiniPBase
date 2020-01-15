@@ -1,0 +1,268 @@
+/*
+ * @Author: 陈志陶_cor
+ * @Date: 2019-04-17 09:57:02 
+ * @Last Modified by: 陈志陶_cor
+ * @Last Modified time: 2020-01-14 16:49:22
+ */
+/**app.wxss**/
+page{-webkit-text-size-adjust:none;text-size-adjust:none;line-height: 1;word-wrap: break-word;font-size: 24rpx;color: #323232;background-color:#fff;min-height: 100%;}
+page,.page {-webkit-overflow-scrolling: touch}
+view,text,button,input{font-family: -apple-system-font, Helvetica Neue, Helvetica, STHeiTi, sans-serif;}
+button{text-align: left;margin:0;padding: 0;background: none;font-size: 24rpx;line-height: 1;border-radius: 0;overflow: visible;box-sizing: content-box;color:inherit;}
+button::after{border:none;}
+.tB{
+    /*主题背景色*/
+    background: #1498ff;
+  }
+  .tC{
+    /*默认字体主题色  */
+    color: #1498ff;
+  }
+  .tbc{
+    border-color: #1498ff !important;
+  }
+  .nC{
+    /*次级字体颜色*/
+    color: #dcdcdc;
+  }
+  .wC{
+    /*白色颜色字体  */
+    color: white !important;
+  }
+  page{
+    /*默认背景色  */
+    background: #fff;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .m::before{
+    content: "¥";
+    padding: 0px;
+    margin: 0px;
+    font-size: 80%;
+    /*加金钱前缀*/
+  }
+  
+  .del{
+    /*加删除线*/
+    text-decoration:line-through;
+  }
+  
+  .Tline{
+    /*两行省略号  */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: normal;
+  }
+  .Oline{
+    /*1行内省略号  */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: normal;
+  }
+  .h100{
+    /*高度100*/
+    height: 100rpx;
+  }
+  .w100{
+    /*宽度 100% */
+    width: 100%;
+  }
+  .pf{
+    /* fixed定位 */
+    position: fixed;
+  }
+  .b0{
+    /*bottom 为0  */
+    bottom: 0;
+  }
+  .fs20{
+    font-size: 20rpx !important;
+  }
+  .fs24{
+    font-size: 24rpx;
+  }
+  .fs28{
+    font-size:28rpx; 
+  }
+  .fs30{
+    font-size:30rpx; 
+  }
+  .fs32{
+    font-size: 32rpx;
+  }
+  .skill_text::before{
+    content: "秒杀";
+    background: #0876ff;
+    font-size: 24rpx;
+    padding: 5rpx 10rpx;
+    color: white;
+    border-radius: 30rpx;
+    margin-right:10rpx;
+  }
+  .tbtn{
+    color:white;
+    padding:5rpx 10rpx;
+    border-radius:50rpx;
+    margin-left:20rpx;
+  }
+  .g_o_icon{
+    width:20rpx;
+    height:20rpx;
+    background:rgba(255,33,64,1);
+    border-radius:50%;
+  }
+  .shadow{
+    box-shadow: 0px 0rpx 10rpx rgba(0, 0, 0, 0.137);
+  }
+  .tbr{
+    border-radius: 10rpx;
+  }
+  .flex_c{
+    display: flex;
+    align-items: center;
+  }
+  .flex_c_c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex_c_sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .flex1{
+    flex: 1;
+  }
+  .flex2{
+    flex: 2;
+  }
+  .flex3{
+    flex: 3;
+  }
+  .flex4{
+    flex: 4;
+  }
+  /* ↑↑↑↑↑↑↑↑↑以上是工具类  */
+
+  /* 字体样式 */
+  .f_24_des{
+    font-size:24rpx;
+    font-weight:500;
+    color:rgba(153,153,153,1);
+  }
+  .f_22_des{
+    font-size:22rpx;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+  }
+  .f_26_des{
+    font-size:26rpx;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+  }
+  .f_28_des{
+    font-size:28rpx;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+  }
+  .f_40_title{
+    font-size:40rpx;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+  }
+  .f_32_title{
+    font-size:32rpx;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+  }
+  .f_34_title{
+    font-size:34rpx;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+  }
+  .f_30_title{
+    font-size:30rpx;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+  }
+  .f_28_title{
+    font-size:28rpx;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+  }
+  
+  /* 字体样式 */
+
+  /* ↓↓↓↓↓↓↓↓↓↓ 简单输入框全局类 */
+  .simple_input{
+    border:#1498FF solid 1px;
+    background: white;
+    border-radius: 5rpx;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    font-size:28rpx;
+    font-weight:500;
+    color:rgb(65, 65, 65);
+    height: 50rpx;
+    flex: 1;
+  }
+  .simple_input_p{
+    font-size:28rpx;
+    font-weight:500;
+    color:rgba(204,204,204,1);
+    padding-left: 0rpx;
+  }
+  /* ↑↑↑↑↑↑↑↑↑↑  简单输入框全局类 */
+
+/* ↓↓↓↓↓↓↓↓↓↓ 空数据 */
+.nullData{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 100%;
+  background: white;
+}
+.nullData_tip{
+  font-size:24rpx;
+  font-weight:500;
+  color:rgba(204,204,204,1);
+}
+.nullData_content{
+  text-align: center;
+  position: relative;
+  top: -20%;
+}
+/* ↑↑↑↑↑↑↑↑↑↑ 空数据 */
+
+/* ↓↓↓↓↓↓↓↓↓↓ end */
+.end{
+  text-align: center;
+  margin-top: 30rpx;
+  font-size:20rpx;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  padding-bottom:20rpx;
+  box-sizing: border-box;
+}
+/* ↑↑↑↑↑↑↑↑↑↑ end */
+
+
+
+/* ↓↓↓↓↓↓↓↓↓↓ 覆盖 editor的样式 */
+.ql-editor.ql-blank::before{
+  /* 此处设置 placeholder 样式 */
+  color: rgba(110, 110, 110, 0.6);
+  content: attr(data-placeholder);
+  font-style: normal;
+  pointer-events: none;
+  position: absolute;
+}
+/* ↓↓↓↓↓↓↓↓↓↓ 覆盖 editor的样式 */
