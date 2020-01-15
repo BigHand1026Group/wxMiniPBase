@@ -1,0 +1,20 @@
+module.exports={
+    codePhone:function(str){
+        if(!str)return;
+        return str.substring(0,3)+ "****" + str.substring(7)
+    },
+    quantile:function(str){
+        // 分位数转正常金额
+        var r=(str/100).toFixed(2)
+        return r 
+    },
+    hasP:function(arr){
+        // 是否有这个属性
+        // console.log( typeof(arr),'arrarrarrarrarrarr')
+        if(typeof(arr)){
+            return arr
+        }else{
+            return false
+        }
+    },
+}
