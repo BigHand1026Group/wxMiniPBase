@@ -1,6 +1,6 @@
 var fs=require('fs')
 var path=require("path")
-var loopGetRedCircleUrl=path.resolve(__dirname,'../utils/service/cor_user.js')
+var loopGetRedCircleUrl=path.resolve(__dirname,'../../../utils/service/cor_user.js')
 var loopGetRedCircleText=fs.readFileSync(loopGetRedCircleUrl);//
 module.exports={
     async changeLoopGetRedCircle(type){
