@@ -13,5 +13,5 @@ var version={
 version.month<10?version.month="0"+version.month:''
 version.day<10?version.day="0"+version.day:''
 exec('clip').stdin.end(`v${version.year.toString().substring(2,4)}.${version.month}.${version.day}.${version.hour}.${version.minute}`);
-fChange.changeLoopGetRedCircle(true);//注释请求的小红点
+// fChange.changeLoopGetRedCircle(true);//注释请求的小红点
 // fChange.setMode("locality");//设置为本地
